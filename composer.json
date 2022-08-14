@@ -1,0 +1,26 @@
+{
+    "name": "dhenfie/error-handler",
+    "description": "cara termudah kelola error di php secara global",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ErrorHandler\\": "./src"
+        },
+        "files": [
+            "./src/Helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "dhenfie",
+            "email": "fajarsusilo1600@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpstan/phpstan": "^1.8",
+        "php": "^8.0.0"
+    }
+}
+

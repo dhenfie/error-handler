@@ -31,3 +31,5 @@ yaitu class **SimpleHandler**
 class SimpleHandler() inilah yang mengubah perilaku error reporting php.
 
 anda dapat dapat membuat custom handler sendiri dengan meng-implementasikan class custom handler anda dengan HandlerInterface;
+
+silahkan jalankann file **example.php** untuk melakukan emulasi.

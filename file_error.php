@@ -1,6 +1,11 @@
 <?php
 
-// fatal error
- method_not_found();
-//  warning
-echo $variable_not_found; 
+class Message {
+    public function write(string $message): strings{
+        echo $message;
+    }
+}
+
+
+$message = new Message();
+$message->write('ddd');

@@ -23,17 +23,17 @@ class SimpleHandler implements HandlerInterface
 
         if ($e instanceof Error) {
             echo $view->render(data: ['e' => $e]);
-            exit;
+            die;
         }
 
         if ($e instanceof ErrorException) {
             echo $view->render(data: ['e' => $e]);
-            exit;
+            die;
         }
     }
 
     public function report(Throwable $e)
     {
-        // todo
+        // implement loggger
     }
 }

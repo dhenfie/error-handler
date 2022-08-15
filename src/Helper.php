@@ -11,8 +11,8 @@ if (!function_exists('get_detail_code')) {
         $source = file_get_contents($file);
         $source = explode("\n", $source);
         $lengthLine = count($source);
-        $startLine = $line - 10;
-        $endLine = $line + 10;
+        $startLine = $line - 5;
+        $endLine = $line + 5;
         $html = null;
 
         if ($startLine < 1) {
@@ -30,6 +30,6 @@ if (!function_exists('get_detail_code')) {
             }
             $html .= '<div class="line-code"> <span class="line-number">' . ($i + 1) . '</span>' . htmlspecialchars($source[$i]) . '</div>';
         }
-        echo '<pre>' . $html . '</pre>';
+        echo '<pre><code>' . $html . '</code></pre>';
     }
 }

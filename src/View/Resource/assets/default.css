@@ -1,11 +1,51 @@
 body {
     background-color: #efefef;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: salmon;
+    color: #bb0000;
 }
 .message {
     background-color: white;
     padding: 12px;
     border-radius: 5px;
-    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: large;
+    font-style: italic;
+}
+
+pre {
+    overflow: auto;
+    color: white;
+    background-color: #333333;
+    margin-top: 0px;
+}
+
+.display-code {
+    margin-top: 10px;
+    background-color: white;
+}
+.display-code > .filename {
+    color: #333333;
+    font-size: large;
+    font-weight: bold;
+}
+.line-code > .line-number {
+    background-color: #222222;
+    color: white;
+    margin-right: 10px;
+    margin-top: 1px;
+    display: inline-block;
+    font-style: normal;
+    padding: 10px;
+}
+.line-code.active {
+    background-color: #ff9000;    
+}
+.line-code.line-code.active > .line-number {
+    background-color: #ff9000;
 }

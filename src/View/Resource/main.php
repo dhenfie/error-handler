@@ -2,13 +2,21 @@
 
 use ErrorHandler\View\View; ?>
 
-<?php View::section('header'); ?>
-<ul>
-    <li> Message <?= $e->getMessage() ?></li>
-    <li> File <?= $e->getFile() ?></li>
-    <li> Line <?= $e->getLine() ?></li>
-</ul>
-<?php View::endSection(); ?>
 <?php View::section('code'); ?>
-<?= get_detail_code($e->getFile(), $e->getLine()); ?>
+<div class="display-code">
+    <span class="filename"> <?php echo basename($e->getFile()); ?>:<?php echo $e->getLine(); ?> </span>
+    <?php echo get_detail_code($e->getFile(), $e->getLine()); ?>
+</div>
+
+<div class="display-code">
+    <?php
+    $trace = array_slice($e->getTrace(), 1);
+    if (!empty($trace) && is_array($trace)) {
+        foreach ($trace as $previous) {
+            echo '<span class="filename">' . basename($previous['file']) . ':' . $previous['line'] .'</span>';
+            echo get_detail_code($previous['file'], $previous['line']);
+        }
+    }
+    ?>
+</div>
 <?php View::endSection(); ?>

@@ -3,6 +3,8 @@
 
 anggap saja ini seperti perpustakaan [Whoops](https://github.com/filp/whoops), namun ini lebih sederhana.
 
+![sample.png d](https://raw.githubusercontent.com/dhenfie/error-handler/master/sample.png)
+
 ## install
 karena library ini belum tersedia via composer, anda dapat menggunakan git. 
 

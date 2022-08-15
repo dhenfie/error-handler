@@ -11,8 +11,8 @@ if (!function_exists('get_detail_code')) {
         $source = file_get_contents($file);
         $source = explode("\n", $source);
         $lengthLine = count($source);
-        $startLine = $line - 5;
-        $endLine = $line + 5;
+        $startLine = $line - 10;
+        $endLine = $line + 10;
         $html = null;
 
         if ($startLine < 1) {

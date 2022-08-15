@@ -1,11 +1,11 @@
 <?php
 
 class Message {
-    public function write(string $message): strings{
+    public function write(string $message): void{
         echo $message;
     }
 }
 
 
 $message = new Message();
-$message->write('ddd');
+$message->writee('hello world');

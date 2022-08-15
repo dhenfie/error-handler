@@ -1,0 +1,11 @@
+body {
+    background-color: #efefef;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: salmon;
+}
+.message {
+    background-color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+}
